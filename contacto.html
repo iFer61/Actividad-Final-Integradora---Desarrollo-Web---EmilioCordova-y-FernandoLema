@@ -1,0 +1,112 @@
+Contacto · HTML
+Copiar
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto — GrooveVault</title>
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+    </head>
+
+    <body>
+
+        <header>
+            <h1>GrooveVault</h1>
+            <p>Tu tienda de discos de vinilo y CDs</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="contacto">
+                <h2>Contáctanos</h2>
+                <p>Consultas, pedidos especiales y más. Llena el formulario y te responderemos pronto.</p>
+
+                <form id="formulario-contacto">
+
+                    <section>
+                        <label for="nombre">Nombre *</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre completo"
+                            autocomplete="name"
+                        />
+                    </section>
+
+                    <section>
+                        <label for="ciudad">Ciudad *</label>
+                        <input
+                            type="text"
+                            id="ciudad"
+                            name="ciudad"
+                            placeholder="Tu ciudad"
+                            autocomplete="address-level2"
+                        />
+                    </section>
+
+                    <section>
+                        <label for="email">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="tu@email.com"
+                            autocomplete="email"
+                        />
+                    </section>
+
+                    <section>
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">— Selecciona un asunto —</option>
+                            <option value="consulta">Consulta sobre un producto</option>
+                            <option value="pedido">Pedido especial</option>
+                            <option value="disponibilidad">Disponibilidad / Stock</option>
+                            <option value="envio">Información de envío</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </section>
+
+                    <section>
+                        <label for="descripcion">Descripción *</label>
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="5"
+                            placeholder="Cuéntanos en qué podemos ayudarte..."
+                        ></textarea>
+                    </section>
+
+                    <section>
+                        <button type="submit">Enviar mensaje</button>
+                    </section>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 GrooveVault. Todos los derechos reservados.</p>
+            <p>Vinyl &middot; CD &middot; Música que perdura</p>
+        </footer>
+
+        <!-- <script src="validacion.js"></script> -->
+
+    </body>
+
+</html>
