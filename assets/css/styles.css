@@ -1,0 +1,412 @@
+/* ============================================================
+    GrooveVault — Hoja de estilos principal
+   ============================================================ */
+
+/* ---- Fuentes de Google ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ---- Reset básico ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+a {
+    text-decoration: none;
+    color: #f5a623;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ============================================================
+    HEADER
+   ============================================================ */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #f5a623; /* Línea naranja decorativa */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f5a623;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+}
+
+/* ============================================================
+    NAV
+   ============================================================ */
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #f5a623;
+    color: #121212;
+    text-decoration: none;
+}
+
+/* Clase .active: agrégala manualmente en el <a> de la página actual.
+   Ejemplo: <a href="index.html" class="active">Inicio</a>        */
+nav ul li a.active {
+    background-color: #f5a623;
+    color: #121212;
+    font-weight: 600;
+}
+
+/* ============================================================
+    MAIN
+   ============================================================ */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ============================================================
+    SECCIÓN BIENVENIDA (index.html)
+   ============================================================ */
+#bienvenida {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+#bienvenida h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#bienvenida p {
+    color: #aaaaaa;
+    max-width: 550px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+#bienvenida a {
+    display: inline-block;
+    background-color: #f5a623;
+    color: #121212;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#bienvenida a:hover {
+    background-color: #e09410;
+    text-decoration: none;
+}
+
+/* ============================================================
+    SECCIÓN DESTACADOS — tarjetas de género (index.html)
+   ============================================================ */
+#destacados h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2e2e2e;
+}
+
+article:hover {
+    border-color: #ffffff;
+}
+
+article img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+article h3,
+article h4 {
+    padding: 15px 15px 5px;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+article p {
+    padding: 0 15px 10px;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+article ul {
+    padding: 0 15px 10px 30px;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+article a {
+    display: inline-block;
+    margin: 0 15px 15px;
+    font-size: 0.85rem;
+    color: #f5a623;
+}
+
+article strong {
+    color: #ffffff;
+}
+
+/* ============================================================
+    SECCIÓN CATEGORÍAS (categorias.html)
+   ============================================================ */
+#categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+#categorias > h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#categorias > p {
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+article {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #2e2e2e;
+}
+
+article h3 {
+    font-size: 1.3rem;
+    color: #f5a623;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ============================================================
+    SECCIÓN CATÁLOGO / PRODUCTOS (productos.html)
+   ============================================================ */
+#catalogo > h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#catalogo > p {
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#catalogo section {
+    margin-bottom: 40px;
+}
+
+#catalogo section h3 {
+    font-size: 1.3rem;
+    color: #f5a623;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2e2e2e;
+    text-align: center;
+}
+
+/* Los article de productos se muestran en grilla de 3 columnas */
+#catalogo section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+/* El h3 ocupa toda la fila */
+#catalogo section h3 {
+    grid-column: 1 / -1;
+}
+
+/* ============================================================
+    FORMULARIO DE CONTACTO (contacto.html)
+   ============================================================ */
+#contacto h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#contacto > p {
+    color: #aaaaaa;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#formulario-contacto section {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #cccccc;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    width: 100%;;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f5a623;
+}
+
+textarea {
+    resize: none;
+    min-height: 50px;
+}
+
+select option {
+    background-color: #1e1e1e;
+}
+
+button[type="submit"] {
+    background-color: #f5a623;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e09410;
+}
+
+/* ============================================================
+    FOOTER
+   ============================================================ */
+footer {
+    background-color: #1e1e1e;
+    border-top: 2px solid #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-size: 0.85rem;
+    margin-top: 60px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* ============================================================
+    RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #bienvenida h2 {
+        font-size: 1.5rem;
+    }
+
+    #catalogo section {
+        grid-template-columns: 1fr;
+    }
+
+    #catalogo section h3 {
+        grid-column: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #catalogo section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #catalogo section h3 {
+        grid-column: 1 / -1;
+    }
+}
