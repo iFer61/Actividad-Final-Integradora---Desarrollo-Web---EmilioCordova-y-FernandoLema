@@ -25,3 +25,11 @@ https://ifer61.github.io/Actividad-Final-Integradora---Desarrollo-Web---EmilioCo
 (Copiar y Pegar la URL, fallos con el enlace directo)
 
 ## Capturas:
+
+![image alt](https://github.com/iFer61/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/blob/ccdd6f19b2b2b22bca91c5cb469c88c8221d8a9e/assets/img/Captura%20de%20pantalla%202026-03-03%20235217.png)
+
+![image alt](https://github.com/iFer61/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/blob/ccdd6f19b2b2b22bca91c5cb469c88c8221d8a9e/assets/img/Captura%20de%20pantalla%202026-03-03%20235249.png)
+
+![image alt](https://github.com/iFer61/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/blob/ccdd6f19b2b2b22bca91c5cb469c88c8221d8a9e/assets/img/Captura%20de%20pantalla%202026-03-03%20235412.png)
+
+![image alt](https://github.com/iFer61/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/blob/ccdd6f19b2b2b22bca91c5cb469c88c8221d8a9e/assets/img/Captura%20de%20pantalla%202026-03-03%20235417.png)
