@@ -17,7 +17,7 @@ Este es un sitio web estático para simular un e-commerce **orientado a la venta
 - **contacto.html** --> Formulario de contacto con validación JavaScript.
 
 ### Estado del proyecto
-Proyecto en desarrollo como ejercicio académico de frontend. Las imágenes de productos son obtenidas desde motores de busqueda de imágenes en internet (Google Images, Bing Image Search), el formulario de contacto no está conectado a un backend real y cualquier información que se envíe no se almacenará.
+Proyecto en desarrollo como ejercicio académico de frontend. Las imágenes de productos son obtenidas desde motores de busqueda en internet (Google Images, Bing Image Search), el formulario de contacto no está conectado a un backend real y cualquier información que se envíe no se almacenará.
 
 ## Enlace a la web - GitHub Pages
 https://ifer61.github.io/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/
