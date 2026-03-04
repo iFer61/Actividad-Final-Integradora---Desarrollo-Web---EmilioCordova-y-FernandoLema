@@ -22,8 +22,6 @@ Proyecto en desarrollo como ejercicio académico de frontend. Las imágenes de p
 ## Enlace a la web - GitHub Pages
 https://ifer61.github.io/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/
 
-(Copiar y Pegar la URL, fallos con el enlace directo)
-
 ## Capturas:
 
 ![image alt](https://github.com/iFer61/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/blob/ccdd6f19b2b2b22bca91c5cb469c88c8221d8a9e/assets/img/Captura%20de%20pantalla%202026-03-03%20235217.png)
