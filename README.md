@@ -18,6 +18,7 @@ Este es un sitio web estático para simular un e-commerce **orientado a la venta
 
 ## Enlace a la web - GitHub Pages
 https://ifer61.github.io/Actividad-Final-Integradora---Desarrollo-Web---EmilioCordova-y-FernandoLema/
+
 (Copiar y Pegar la URL, fallos con el enlace directo)
 
 ## Capturas:
