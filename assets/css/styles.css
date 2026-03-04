@@ -1,5 +1,13 @@
 /* ============================================================
-    GrooveVault — Hoja de estilos principal
+    MAPA DE COLORES:
+    #0a0e1a  →  fondo general       (negro azulado profundo)
+    #111827  →  fondo tarjeta       (azul noche)
+    #1e2d45  →  fondo elevado       (azul oscuro medio)
+    #e8edf5  →  texto principal     (blanco frío)
+    #8a9ab8  →  texto secundario    (azul grisáceo)
+    #c8d4e8  →  acento suave        (azul claro, para títulos)
+    #2a3f5f  →  bordes              (azul oscuro sutil)
+    #ffffff  →  acento blanco puro  (hover, botones activos)
    ============================================================ */
 
 /* ---- Fuentes de Google ---- */
@@ -14,8 +22,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #0a0e1a;
+    color: #e8edf5;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,11 +31,11 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-    background-color: #e0e0e0;
-    color: black;
+    text-decoration: none;
 }
 
 img {
@@ -38,10 +46,10 @@ img {
     HEADER
    ============================================================ */
 header {
-    background-color: #1e1e1e;
+    background-color: #111827;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #ffffff; /* Línea naranja decorativa */
+    border-bottom: 3px solid #2a3f5f;
 }
 
 header h1 {
@@ -51,10 +59,16 @@ header h1 {
 }
 
 header p {
-    color: #aaaaaa;
-    font-size: 0.95rem;
+    color: #8a9ab8;
+    font-size: 17px;
 }
 
+header h1 img {
+    height: 150px;      /* ajusta este número a gusto */
+    width: auto;       /* mantiene la proporción original */
+    display: block;
+    margin: 0 auto;    /* centra horizontalmente */
+}
 /* ============================================================
     NAV
    ============================================================ */
@@ -71,23 +85,21 @@ nav ul {
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #c8d4e8;
     font-size: 0.95rem;
     padding: 5px 10px;
     border-radius: 4px;
 }
 
 nav ul li a:hover {
-    background-color: #ffffff;
-    color: #121212;
+    background-color: #003791;
+    color: #ffffff;
     text-decoration: none;
 }
 
-/* Clase .active: agrégala manualmente en el <a> de la página actual.
-   Ejemplo: <a href="index.html" class="active">Inicio</a>        */
 nav ul li a.active {
-    background-color: #ffffff;
-    color: #121212;
+    background-color: #1e2d45;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -108,8 +120,9 @@ main {
     text-align: center;
     margin-bottom: 50px;
     padding: 40px 20px;
-    background-color: #1e1e1e;
+    background-color: #111827;
     border-radius: 8px;
+    border: 1px solid #2a3f5f;
 }
 
 #bienvenida h2 {
@@ -119,7 +132,7 @@ main {
 }
 
 #bienvenida p {
-    color: #aaaaaa;
+    color: #8a9ab8;
     max-width: 550px;
     margin: 0 auto 25px;
     line-height: 1.7;
@@ -127,21 +140,26 @@ main {
 
 #bienvenida a {
     display: inline-block;
-    background-color: #ffffff;
-    color: #121212;
+    background-color: #1e2d45;
+    color: #ffffff;
     padding: 10px 25px;
     border-radius: 5px;
     font-weight: 600;
+    border: 1px solid #2a3f5f;
 }
 
 #bienvenida a:hover {
-    background-color: #ffffff;
-    text-decoration: none;
+    background-color: #2a3f5f;
+    color: #ffffff;
 }
 
 /* ============================================================
-    SECCIÓN DESTACADOS — tarjetas de género (index.html)
+    SECCIÓN DESTACADOS (index.html)
    ============================================================ */
+#destacados {
+    margin-bottom: 40px;
+}
+
 #destacados h2 {
     font-size: 1.5rem;
     color: #ffffff;
@@ -149,6 +167,36 @@ main {
     text-align: center;
 }
 
+#destacados article img {
+    height: 140px;
+    aspect-ratio: auto;
+}
+
+#destacados article p {
+    padding: 10px 15px 8px;
+    text-align: center;
+}
+
+#destacados article a {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #c8d4e8;
+    text-align: center;
+    border: 1px solid #2a3f5f;
+    border-radius: 4px;
+}
+
+#destacados article a:hover {
+    background-color: #1e2d45;
+    color: #ffffff;
+}
+
+/* ============================================================
+    TARJETAS .cards
+   ============================================================ */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 300px));
@@ -156,23 +204,27 @@ main {
     justify-content: center;
 }
 
+/* ============================================================
+    ARTICLE — base compartida
+   ============================================================ */
 article {
-    background-color: #1e1e1e;
+    background-color: #111827;
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #2e2e2e;
+    border: 1px solid #2a3f5f;
     height: 100%;
-    /* SIN width: 100% ni padding aquí */
 }
 
 article:hover {
-    border-color: #ffffff;
+    border-color: #c8d4e8;
 }
 
 article img {
     width: 100%;
-    height: 160px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 article h3,
@@ -184,14 +236,14 @@ article h4 {
 
 article p {
     padding: 0 15px 10px;
-    color: #aaaaaa;
+    color: #8a9ab8;
     font-size: 0.9rem;
     line-height: 1.6;
 }
 
 article ul {
     padding: 0 15px 10px 30px;
-    color: #aaaaaa;
+    color: #8a9ab8;
     font-size: 0.85rem;
     line-height: 1.8;
 }
@@ -200,11 +252,11 @@ article a {
     display: inline-block;
     margin: 0 15px 15px;
     font-size: 0.85rem;
-    color: #ffffff;
+    color: #c8d4e8;
 }
 
 article strong {
-    color: #ffffff;
+    color: #e8edf5;
 }
 
 /* ============================================================
@@ -224,25 +276,52 @@ article strong {
 }
 
 #categorias > p {
-    color: #aaaaaa;
+    color: #8a9ab8;
     margin-bottom: 30px;
     font-size: 0.95rem;
 }
 
 #categorias article {
     padding: 20px;
-    width: 100%;    
+    width: 100%;
+}
+
+#categorias article img {
+    width: 100%;
+    height: 200px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 article h3 {
     font-size: 1.3rem;
-    color: #ffffff;
+    color: #c8d4e8;
     margin-bottom: 15px;
     text-align: center;
 }
 
+#categorias article a {
+    display: block;
+    text-align: center;
+    margin: 15px auto 0;
+    max-width: 260px;
+    padding: 8px 16px;
+    color: #c8d4e8;
+    border: 1px solid #2a3f5f;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#categorias article a:hover {
+    background-color: #1e2d45;
+    color: #ffffff;
+}
+
 /* ============================================================
-    SECCIÓN PRODUCTOS
+    SECCIÓN PRODUCTOS (productos.html)
    ============================================================ */
 #catalogo > h2 {
     font-size: 1.8rem;
@@ -252,43 +331,43 @@ article h3 {
 }
 
 #catalogo > p {
-    color: #aaaaaa;
+    color: #8a9ab8;
     margin-bottom: 30px;
     font-size: 0.95rem;
     text-align: center;
 }
 
-#catalogo section h3 {
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #2e2e2e;
-    text-align: center;
-}
-
-/* Los article de productos se muestran en grilla de 3 columnas */
-#catalogo section {
+#catalogo > section {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 300px));
     gap: 20px;
     align-items: stretch;
-    margin-bottom: 40px;
+    text-align: center;
     justify-content: center;
+    margin-bottom: 48px;
 }
 
-/* El h3 ocupa toda la fila */
-#catalogo section h3 {
+#catalogo > section > h3 {
     grid-column: 1 / -1;
+    font-size: 1.3rem;
+    color: #c8d4e8;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a3f5f;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 #catalogo article {
     padding: 15px;
-    justify-content: center;
 }
 
-#catalogo article > h4 {
-    justify-content: center;
+#catalogo article img {
+    width: 100%;
+    height: 300px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 /* ============================================================
@@ -302,7 +381,7 @@ article h3 {
 }
 
 #contacto > p {
-    color: #aaaaaa;
+    color: #8a9ab8;
     margin-bottom: 25px;
     font-size: 0.95rem;
     text-align: center;
@@ -317,28 +396,28 @@ article h3 {
 
 label {
     font-size: 0.9rem;
-    color: #cccccc;
+    color: #8a9ab8;
     font-weight: 600;
 }
 
 input,
 select,
 textarea {
-    background-color: #1e1e1e;
-    border: 1px solid #3a3a3a;
+    background-color: #111827;
+    border: 1px solid #2a3f5f;
     border-radius: 5px;
-    color: #e0e0e0;
+    color: #e8edf5;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     padding: 10px 12px;
-    width: 100%;;
+    width: 100%;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #ffffff;
+    border-color: #c8d4e8;
 }
 
 textarea {
@@ -347,13 +426,13 @@ textarea {
 }
 
 select option {
-    background-color: #1e1e1e;
+    background-color: #111827;
 }
 
 button[type="submit"] {
-    background-color: #000000;
+    background-color: #1e2d45;
     color: #ffffff;
-    border: none;
+    border: 1px solid #2a3f5f;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -363,19 +442,19 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #494949;
-    color: white;
+    background-color: #2a3f5f;
+    color: #ffffff;
 }
 
 /* ============================================================
     FOOTER
    ============================================================ */
 footer {
-    background-color: #1e1e1e;
-    border-top: 2px solid #ffffff;
+    background-color: #111827;
+    border-top: 2px solid #2a3f5f;
     text-align: center;
     padding: 20px;
-    color: #666666;
+    color: #8a9ab8;
     font-size: 0.85rem;
     margin-top: 60px;
 }
@@ -383,7 +462,6 @@ footer {
 footer p {
     margin-bottom: 5px;
 }
-
 
 /* ============================================================
     RESPONSIVE
@@ -393,35 +471,36 @@ footer p {
         font-size: 1.8rem;
     }
 
+    #bienvenida h2 {
+        font-size: 1.5rem;
+    }
+
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
         justify-content: center;
     }
 
-    #bienvenida h2 {
-        font-size: 1.5rem;
-    }
-
-    #catalogo section {
+    #catalogo > section {
         grid-template-columns: 1fr;
     }
 
-    #catalogo section h3 {
+    #catalogo > section > h3 {
         grid-column: 1;
     }
 }
 
 @media (min-width: 769px) and (max-width: 960px) {
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #catalogo section {
         grid-template-columns: repeat(2, minmax(0, 300px));
         justify-content: center;
     }
 
-    #catalogo section h3 {
+    #catalogo > section {
+        grid-template-columns: repeat(2, minmax(0, 300px));
+        justify-content: center;
+    }
+
+    #catalogo > section > h3 {
         grid-column: 1 / -1;
     }
 }

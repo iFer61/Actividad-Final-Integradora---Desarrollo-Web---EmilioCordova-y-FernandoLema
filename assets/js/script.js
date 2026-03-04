@@ -1,9 +1,3 @@
-/* ============================================================
-    GrooveVault — Validación del formulario de contacto
-    Archivo: assets/js/script.js
-   ============================================================ */
-
-
 /* ------------------------------------------------------------
     SECCIÓN 1 — CONFIGURACIÓN
     Aquí puedes modificar los parámetros de validación sin
@@ -16,12 +10,10 @@ const CONFIG = {
     minCaracteres: {
         nombre:      3,
         ciudad:      3,
-        descripcion: 4
+        descripcion: 10
     },
 
     // Dominios de email permitidos.
-    // Para agregar uno nuevo, añade una cadena a esta lista.
-    // Para quitar uno, elimínalo.
     dominiosPermitidos: [
         "gmail.com",
         "googlemail.com",
@@ -64,7 +56,7 @@ const CONFIG = {
         },
         descripcion: {
             vacio:      "La descripción es obligatoria.",
-            muyCorto:   "La descripción debe tener al menos 4 caracteres."
+            muyCorto:   "La descripción debe tener al menos 10 caracteres."
         }
     }
 };
@@ -76,7 +68,7 @@ const CONFIG = {
     Si cambias un ID en el HTML, actualízalo aquí también.
    ------------------------------------------------------------ */
 
-const form        = document.getElementById("formulario-contacto");
+const form  = document.getElementById("formulario-contacto");
 
 const campos = {
     nombre:      document.getElementById("nombre"),
